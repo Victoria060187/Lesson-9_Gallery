@@ -1,0 +1,40 @@
+@import url('reset.css');
+
+.container {
+    background: aquamarine;
+	max-width: 1000px;
+	padding: 70px 0;
+	margin: 0 auto;
+	position: relative;
+}
+
+.gal {
+	width: 600px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.gal img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.gal-text {
+	position: absolute;
+    background: rgba(0,0,0,0.5);
+    color: bisque;
+	z-index: 1;
+	top: 50%;
+    margin-top: -50px;
+	left: 0;
+    height: 80px;
+	font-size: 30px;
+    overflow: hidden;
+	display: none;
+}
+
+.gal:hover .gal-text {
+	display: block;
+}
